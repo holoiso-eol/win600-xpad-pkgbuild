@@ -2,7 +2,7 @@
 
 _pkgname='xpad'
 pkgname='win600-xpad-dkms'
-pkgver="1.0.snapshot$(date +%Y%m%d.%H%M)"
+pkgver="1.1.snapshot$(date +%Y%m%d.%H%M)"
 pkgrel='2'
 pkgdesc="Driver for the Anbernic Win600 controller edits"
 arch=('i686' 'x86_64')
