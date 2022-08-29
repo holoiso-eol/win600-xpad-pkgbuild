@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = linux-*headers
+
+[Action]
+Description = Updating Win600 gamepad driver
+When = PostTransaction
+Exec = /bin/sh -c "/usr/bin/cat /usr/src/linux-*/version | /usr/bin/xargs -n1 /usr/bin/dkms install xpad/drvpkgver -k "
+Depends = dkms
