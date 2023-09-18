@@ -25,8 +25,8 @@ jobs:
 
       - name: Set current package distribution variables
         run: |
-          echo "PKGNAME=$(grep pkgname PKGBUILD | cut -d "=" -f 2)" >> $GITHUB_ENV
-          echo "VER=$(grep pkgname PKGBUILD | cut -d "=" -f 2)-snapshot$(date +%Y%m%d.%H%M)-1-x86_64_CI" >> $GITHUB_ENV
+          echo "PKGNAME=$(grep pkgname PKGBUILD | cut -d "=" -f 2 | tr -d \'\" )" >> $GITHUB_ENV
+          echo "VER=$(grep pkgname PKGBUILD | cut -d "=" -f 2 | tr -d \'\" )-snapshot$(date +%Y%m%d.%H%M)-1-x86_64_CI" >> $GITHUB_ENV
           
       - uses: actions/upload-artifact@v2
         with:
