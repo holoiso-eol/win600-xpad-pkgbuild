@@ -1,8 +1,8 @@
 # Maintainer: Antonis G. <capoiosct at gmail dot com>
 
 _pkgname='xpad'
-pkgname='win600-xpad-dkms'
-pkgver="1.1.snapshot$(date +%Y%m%d.%H%M)"
+pkgname=win600-xpad-dkms
+pkgver="6.3.7.snapshot$(date +%Y%m%d.%H%M)"
 pkgrel='2'
 pkgdesc="Driver for the Anbernic Win600 controller edits"
 arch=('i686' 'x86_64')
